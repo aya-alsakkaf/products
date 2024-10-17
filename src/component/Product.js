@@ -1,7 +1,10 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
+import NAVIGATION from "../navigation";
 
 const Product = ({ product }) => {
+  const navigation = useNavigation();
   return (
     <TouchableOpacity
       style={{
@@ -12,6 +15,11 @@ const Product = ({ product }) => {
         gap: 10,
         justifyContent: "center",
         alignItems: "center",
+      }}
+      onPress={() => {
+        navigation.navigate(NAVIGATION.HOME.PRODUCT_DETAILS, {
+          id: product._id,
+        });
       }}
     >
       <Image

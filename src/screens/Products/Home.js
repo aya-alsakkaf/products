@@ -1,8 +1,8 @@
 import { View, Text, TextInput, ScrollView } from "react-native";
 import React, { useState } from "react";
-import CategoryList from "../component/CategoryList";
-import Product from "../component/Product";
-import ProductList from "../component/ProductList";
+import CategoryList from "../../component/CategoryList";
+import Product from "../../component/Product";
+import ProductList from "../../component/ProductList";
 
 const Home = () => {
   const [type, setType] = useState("");

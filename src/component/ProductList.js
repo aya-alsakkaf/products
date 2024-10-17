@@ -10,6 +10,7 @@ const ProductList = ({ type }) => {
     queryFn: getAllProducts,
   });
 
+  
   console.log(data);
 
   return (
